@@ -13,6 +13,8 @@ En este proyecto construirás una Red Social sobre lo que decidas tú. Podría s
 
 Tu Red Social tendrá que permitir a cualquier usuario crear una cuenta de acceso y loguearse con ella; crear, editar, borrar y "likear" publicacciones.
 
+## Aprendizajes
+
 #### HTML y CSS
  - HTML semántico
  - CSS flexbox
