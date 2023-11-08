@@ -12,21 +12,20 @@ export const registerUser = async (emailUser, passwordUser) => {
       emailUser,
       passwordUser,
     );
-
-    const user = userCredential.user;
-
-    console.log(user);
+    alert('Account Created successfully');
+    
   } catch (error) {
     const errorCode = error.code;
 
     if (errorCode === "auth/email-already-in-use") {
-      alert("Este correo ya está registrado");
+      alert('Corrreo electronico ya en uso');
     }
-    if (errorCode === "auth/invalid-email") {
+    if (errorCode === 'auth/invalid-email') {
       alert("Correo inválido");
     }
-    if (errorCode === "auth/weak-password") {
-      alert("Contraseña débil");
+    if (errorCode === 'auth/weak-password') {
+      alert('Contraseña débil');
     }
   }
 };
+
