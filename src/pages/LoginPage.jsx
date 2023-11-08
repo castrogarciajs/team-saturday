@@ -1,6 +1,6 @@
 import { LoginUser } from "../firebase/login.js";
 import { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export function LoginPage() {
 
@@ -70,11 +70,11 @@ export function LoginPage() {
                     Login
                   </button>
                   
-                  <a title="Inicia sesión."
+                  <Link title="Inicia sesión."
                     className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-                    href="/register"
+                    to="/register"
                   >Register
-                  </a>
+                  </Link>
                 </div>
               </form>
             </div>
