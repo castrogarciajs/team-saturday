@@ -1,6 +1,6 @@
 import { registerUser } from "../firebase/register.js";
 import { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export function RegisterPage() {
   const form = useRef(null)
@@ -91,11 +91,11 @@ export function RegisterPage() {
                   >
                     <img title="Inicia sesión. Utiliza tu cuenta de Google" className="w-6" src="/public/icons/google.png" alt="Google" />
                   </a>
-                  <a title="Inicia sesión."
+                  <Link title="Inicia sesión."
                     className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-                    href="/login"
+                    to='/login'
                   >Sing in
-                  </a>
+                  </Link>
                 </div>
               </form>
             </div>
