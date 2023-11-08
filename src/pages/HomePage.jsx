@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { auth } from "../firebase/app.js";
+import { auth } from "../firebase/register.js";
 import { useNavigate } from "react-router-dom";
 
 export function HomePage() {
@@ -9,9 +9,17 @@ export function HomePage() {
     if (user) {
       console.log(user);
     } else {
-      navigate("/login");
-      console.log("No hay usuario");
+      navigate('/login');
+      console.log('No hay usuario');
     }
   }, []);
-  return <h1>Ruta principal</h1>;
+
+
+
+  return (
+    <>
+      <h1>Ruta principal</h1>
+    </>
+  )
+  
 }
