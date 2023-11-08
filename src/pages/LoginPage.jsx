@@ -6,6 +6,8 @@ export function LoginPage() {
 
     const form = useRef(null)
     const [messageError, serMessageError] = useState('')
+    const navigate = useNavigate()
+
   
   function handleSubmit(event) {
     event.preventDefault()
@@ -16,6 +18,7 @@ export function LoginPage() {
     LoginUser(form.current.username.value, form.current.password.value)
     form.current.reset()
     serMessageError('')
+    navigate('/home')
     return
     
   }

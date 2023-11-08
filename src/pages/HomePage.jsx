@@ -18,7 +18,7 @@ export function HomePage() {
 
   return (
     <>
-      <h1>Ruta principal</h1>;
+      <h1>Ruta principal</h1>
     </>
   )
   
